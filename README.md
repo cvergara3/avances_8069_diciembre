@@ -1,0 +1,3 @@
+# Avances diciembre (entregables 11/11)
+
+En este notebook se evalúa un esquema de reconstrucción end-to-end para shot gathers 3D, en el que el submuestreo de fuentes y la recuperación de los datos faltantes se aprenden de manera conjunta. El proceso se lleva a cabo en el dominio de Common Receiver Gathers (CRG), reorganizando el volumen sísmico original de modo que cada panel agrupe la respuesta de un receptor fijo a lo largo de todas las fuentes. Sobre este dominio se aplica una capa binaria entrenable basada en el método Straight-Through Estimator (STE), que asocia a cada shot un parámetro entrenable (logit) y, tras una operación Top-K, genera una máscara binaria que decide qué fuentes conservar y cuáles eliminar, garantizando un porcentaje de submuestreo objetivo.
